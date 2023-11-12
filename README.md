@@ -37,6 +37,9 @@ It's also **100% Free**! You can use it today by signing up at [https://fundpuri
 
 Oh, and one more thing. It's **completely open-source** 💥
 
+> [!IMPORTANT]
+> Just looking to **use the Fund Purifier**? Use the hosted version at [app.fundpurifier.com](https://app.fundpurifier.com)
+
 ## Development
 
 #### Install dependencies
