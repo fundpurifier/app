@@ -1,0 +1,185 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("SQLITE_PRISMA_URL")
+}
+
+model User {
+    id                String            @id
+    email             String            @unique
+    name              String?
+    alpacaToken       String?
+    isActive          Boolean           @default(true)
+    allowDoubtful     Boolean           @default(true)
+    whitelist         ListedAsset[]     @relation("Whitelist")
+    blacklist         ListedAsset[]     @relation("Blacklist")
+    createdAt         DateTime          @default(now())
+    updatedAt         DateTime          @updatedAt
+    ClosedOrder       ClosedOrder[]
+    Portfolio         Portfolio[]
+    AccountActivities AccountActivity[]
+}
+
+model Fund {
+    isin      String      @id @unique
+    type      String // 'etf' | 'mutual_fund'
+    symbol    String
+    name      String
+    createdAt DateTime    @default(now())
+    updatedAt DateTime    @updatedAt
+    Portfolio Portfolio[]
+}
+
+model ListedAsset {
+    id                     String           @id // alpaca id
+    isin                   String           @unique
+    symbol                 String
+    name                   String
+    isActive               Boolean
+    slices                 PortfolioSlice[]
+    shariahStatus          String           @default("unrated") // 'compliant' | 'non_compliant' | 'doubtful' | 'unrated'
+    shariahDetailsCurrent  String?
+    shariahDetailsPrevious String?
+    isStock                Boolean
+    whitelist              User[]           @relation("Whitelist")
+    blacklist              User[]           @relation("Blacklist")
+    createdAt              DateTime         @default(now())
+    updatedAt              DateTime         @updatedAt
+}
+
+model Portfolio {
+    id                 String           @id
+    title              String
+    fundIsin           String
+    fund               Fund             @relation(fields: [fundIsin], references: [isin])
+    trackChanges       Boolean          @default(true)
+    rebalanceOnChange  Boolean          @default(false)
+    allowDoubtful      Boolean          @default(true)
+    allowUnrated       Boolean          @default(false)
+    reinvestOnSell     Boolean          @default(true)
+    onNonCompliance    String           @default("sell") // 'sell' | 'wait' | 'notify'
+    userId             String
+    user               User             @relation(fields: [userId], references: [id])
+    deleted            Boolean          @default(false)
+    latestChangeSeen   DateTime?
+    latestChangeMerged DateTime?
+    slices             PortfolioSlice[]
+    createdAt          DateTime         @default(now())
+    updatedAt          DateTime         @updatedAt
+    ActionLog          ActionLog[]
+    RecurringBuy       RecurringBuy[]
+}
+
+model PortfolioSlice {
+    id            String        @id
+    percent       Float
+    portfolioId   String
+    portfolio     Portfolio     @relation(fields: [portfolioId], references: [id])
+    listedAssetId String
+    listedAsset   ListedAsset   @relation(fields: [listedAssetId], references: [id])
+    ActionOrder   ActionOrder[]
+    isDeleted     Boolean       @default(false)
+    deletedAt     DateTime?
+    deletedReason String? // 'non-compliant' | 'removed-from-fund'
+    createdAt     DateTime      @default(now())
+    updatedAt     DateTime      @updatedAt
+
+    @@unique([portfolioId, listedAssetId]) // You can only have a single slice per symbol
+}
+
+model CorporateAction {
+    id      String   @id // alpaca id
+    type    String
+    date    DateTime
+    symbol  String
+    isin    String?
+    details String
+}
+
+model AppSetting {
+    key       String   @id @unique
+    value     String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+model ClosedOrder {
+    id               String   @id // alpaca id
+    userId           String
+    user             User     @relation(fields: [userId], references: [id])
+    symbol           String
+    side             String
+    filledQty        Float
+    filledAvgPrice   Float
+    type             String
+    status           String // 'filled' | 'partially_filled' | 'cancelled'?
+    sliceId          String   @default("")
+    raw              String
+    orderSubmittedAt DateTime
+    orderCreatedAt   DateTime
+    createdAt        DateTime @default(now())
+    updatedAt        DateTime @updatedAt
+}
+
+model ActionLog {
+    id          Int           @id @default(autoincrement())
+    portfolioId String
+    portfolio   Portfolio     @relation(fields: [portfolioId], references: [id])
+    action      String // 'rebalance' | 'recurring_buy_cancelled' | 'recurring_buy_created' | 'settings_adjusted' | 'fund_updated' | 'fund_created' | 'dividend' | 'trade' | 'auto_invest' | 'fund_created'
+    isAutomated Boolean
+    details     String
+    createdAt   DateTime      @default(now())
+    updatedAt   DateTime      @updatedAt
+    ActionOrder ActionOrder[]
+}
+
+model ActionOrder {
+    id               String         @id
+    actionLogId      Int
+    actionLog        ActionLog      @relation(fields: [actionLogId], references: [id])
+    portfolioSliceId String
+    portfolioSlice   PortfolioSlice @relation(fields: [portfolioSliceId], references: [id])
+    raw              String
+    createdAt        DateTime       @default(now())
+    updatedAt        DateTime       @updatedAt
+}
+
+model HistoricalPrice {
+    symbol String
+    date   DateTime // date
+    close  Float
+
+    @@id([symbol, date])
+}
+
+model AccountActivity {
+    id     String @id // alpaca id
+    amount Float
+    userId String
+    user   User   @relation(fields: [userId], references: [id])
+    date   String // YYYY-MM-DD
+    raw    String
+}
+
+model RecurringBuy {
+    id          Int       @id @default(autoincrement())
+    portfolioId String
+    portfolio   Portfolio @relation(fields: [portfolioId], references: [id])
+    amount      Float
+    frequency   String // 'daily' | 'weekly' | 'monthly'
+    startDate   DateTime
+    isDeleted   Boolean   @default(false)
+    deletedAt   DateTime?
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+}
+
+model Waitlist {
+    id        Int      @id @default(autoincrement())
+    email     String   @unique
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}

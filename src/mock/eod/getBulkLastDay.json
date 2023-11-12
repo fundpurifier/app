@@ -1,0 +1,112 @@
+[
+  {
+    "code": "A",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 106.84,
+    "high": 110.81,
+    "low": 106.55,
+    "close": 110.54,
+    "adjusted_close": 110.54,
+    "volume": 2142000
+  },
+  {
+    "code": "AA",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 25.22,
+    "high": 25.595,
+    "low": 24.82,
+    "close": 25.54,
+    "adjusted_close": 25.54,
+    "volume": 4851900
+  },
+  {
+    "code": "AAA",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 24.88,
+    "high": 24.88,
+    "low": 24.83,
+    "close": 24.83,
+    "adjusted_close": 24.83,
+    "volume": 700
+  },
+  {
+    "code": "AACT",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 10.32,
+    "high": 10.33,
+    "low": 10.32,
+    "close": 10.33,
+    "adjusted_close": 10.33,
+    "volume": 835800
+  },
+  {
+    "code": "AAIC",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 4.45,
+    "high": 4.5,
+    "low": 4.435,
+    "close": 4.47,
+    "adjusted_close": 4.47,
+    "volume": 49314
+  },
+  {
+    "code": "AAIC-P-B",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 19.65,
+    "high": 19.65,
+    "low": 19.65,
+    "close": 19.65,
+    "adjusted_close": 19.65,
+    "volume": 497
+  },
+  {
+    "code": "AAIC-P-C",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 23.7001,
+    "high": 23.97,
+    "low": 23.7001,
+    "close": 23.97,
+    "adjusted_close": 23.97,
+    "volume": 1185
+  },
+  {
+    "code": "AAIC-PB",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 19.65,
+    "high": 19.65,
+    "low": 19.65,
+    "close": 19.65,
+    "adjusted_close": 19.65,
+    "volume": 497
+  },
+  {
+    "code": "AAIC-PC",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 23.7001,
+    "high": 23.97,
+    "low": 23.7001,
+    "close": 23.97,
+    "adjusted_close": 23.97,
+    "volume": 1185
+  },
+  {
+    "code": "AAIN",
+    "exchange_short_name": "US",
+    "date": "2023-11-07",
+    "open": 23.3512,
+    "high": 23.4896,
+    "low": 23.28,
+    "close": 23.4896,
+    "adjusted_close": 23.4896,
+    "volume": 2008
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "isin": "US3161467291",
+    "name": "Fidelity Salem Street Trust: Fidelity Series Investment Grade Bond Fund",
+    "symbol": "FSIGX"
+  },
+  {
+    "isin": "US3608021024",
+    "name": "American Funds Fundamental Investors; Class A Shares",
+    "symbol": "ANCFX"
+  },
+  {
+    "isin": "US61747C5250",
+    "name": "Morgan Stanley Institutional Liquidity Funds: Treasury Securities Portfolio; Institutional Class Shares",
+    "symbol": "MSUXX"
+  },
+  {
+    "isin": "US61747C7074",
+    "name": "Morgan Stanley Institutional Liquidity Funds: Government Portfolio; Institutional Class Shares",
+    "symbol": "MVRXX"
+  },
+  {
+    "isin": "US0240711020",
+    "name": "American Balanced Fund; Class A Shares",
+    "symbol": "ABALX"
+  },
+  {
+    "isin": "US0233751082",
+    "name": "AMCAP Fund; Class A Shares",
+    "symbol": "AMCPX"
+  },
+  {
+    "isin": "US4812C06707",
+    "name": "JPMorgan Trust II: JPMorgan US Government Money Market Fund; Capital Shares",
+    "symbol": "OGVXX"
+  },
+  {
+    "isin": "US3163893031",
+    "name": "Fidelity Securities Fund: Fidelity Blue Chip Growth Fund",
+    "symbol": "FBGRX"
+  },
+  {
+    "isin": "US3161463563",
+    "name": "Fidelity Salem Street Trust: Fidelity US Bond Index Fund",
+    "symbol": "FXNAX"
+  },
+  {
+    "isin": "US31635R3306",
+    "name": "Fidelity Rutland Square Trust II: Strategic Advisers Large Cap Fund",
+    "symbol": "FALCX"
+  },
+  {
+    "isin": "US31635R3637",
+    "name": "Fidelity Rutland Square Trust II: Strategic Advisers Fidelity US Total Stock Fund",
+    "symbol": "FCTDX"
+  },
+  {
+    "isin": "US31635R8842",
+    "name": "Fidelity Rutland Square Trust II: Strategic Advisers Core Income Fund",
+    "symbol": "FPCIX"
+  },
+  {
+    "isin": "US3160671075",
+    "name": "Fidelity Phillips Street Trust: Fidelity Government Cash Reserves",
+    "symbol": "FDRXX"
+  },
+  {
+    "isin": "US3162001040",
+    "name": "Fidelity Mt Vernon Street Trust: Fidelity Growth Company Fund",
+    "symbol": "FDGRX"
+  },
+  {
+    "isin": "US5929055094",
+    "name": "Metropolitan West Funds: MetWest Total Return Bond Fund; Class I Shares",
+    "symbol": "MWTIX"
+  },
+  {
+    "isin": "US4812A03674",
+    "name": "JPMorgan Trust I: JPMorgan Prime Money Market Fund; Capital Shares",
+    "symbol": "CJPXX"
+  },
+  {
+    "isin": "US31617H8051",
+    "name": "Fidelity Hereford Street Trust: Fidelity Money Market Fund; Premium Class",
+    "symbol": "FZDXX"
+  },
+  {
+    "isin": "US31617H1023",
+    "name": "Fidelity Hereford Street Trust: Fidelity Government Money Market Fund",
+    "symbol": "SPAXX"
+  },
+  {
+    "isin": "US4812A03757",
+    "name": "JPMorgan Trust I: JPMorgan 100% US Treasury Securities Money Market Fund; Capital Shares",
+    "symbol": "CJTXX"
+  },
+  {
+    "isin": "US3998748178",
+    "name": "Growth Fund of America; Class R6 Shares",
+    "symbol": "RGAGX"
+  },
+  {
+    "isin": "US6933907007",
+    "name": "PIMCO Funds: PIMCO Total Return Fund; Institutional Class Shares",
+    "symbol": "PTTRX"
+  },
+  {
+    "isin": "US3998741066",
+    "name": "Growth Fund of America; Class A Shares",
+    "symbol": "AGTHX"
+  },
+  {
+    "isin": "US3160711095",
+    "name": "Fidelity Contrafund",
+    "symbol": "FCNTX"
+  },
+  {
+    "isin": "US3159115373",
+    "name": "Fidelity Concord Street Trust: Fidelity Series Total Market Index Fund",
+    "symbol": "FCFMX"
+  },
+  {
+    "isin": "US3159116934",
+    "name": "Fidelity Concord Street Trust: Fidelity Total Market Index Fund",
+    "symbol": "FSKAX"
+  },
+  {
+    "isin": "US3159117437",
+    "name": "Fidelity Concord Street Trust: Fidelity Extended Market Index Fund",
+    "symbol": "FSMAX"
+  },
+  {
+    "isin": "US3159117502",
+    "name": "Fidelity Concord Street Trust: Fidelity 500 Index Fund",
+    "symbol": "FXAIX"
+  },
+  {
+    "isin": "US31607A7037",
+    "name": "Fidelity Colchester Street Trust: Government Portfolio; Institutional Class Shares",
+    "symbol": "FRGXX"
+  },
+  {
+    "isin": "US72201F4900",
+    "name": "PIMCO Funds: PIMCO Income Fund; Institutional Class Shares",
+    "symbol": "PIMIX"
+  },
+  {
+    "isin": "US6652787010",
+    "name": "Northern Institutional Funds: US Government Select Portfolio; Shares",
+    "symbol": "BGSXX"
+  },
+  {
+    "isin": "US6480181097",
+    "name": "New Perspective Fund; Class A Shares",
+    "symbol": "ANWPX"
+  },
+  {
+    "isin": "US2620062081",
+    "name": "Dreyfus Government Cash Management Funds: Dreyfus Government Cash Management; Institutional Shares",
+    "symbol": "DGCXX"
+  },
+  {
+    "isin": "US2586201038",
+    "name": "DoubleLine Funds Trust: DoubleLine Total Return Bond Fund; Class I Shares",
+    "symbol": "DBLTX"
+  },
+  {
+    "isin": "US09248U5517",
+    "name": "BlackRock Liquidity Funds: Treasury Trust Fund; Institutional Shares",
+    "symbol": "TTTXX"
+  },
+  {
+    "isin": "US09248U7182",
+    "name": "BlackRock Liquidity Funds: T-Fund; Institutional Shares",
+    "symbol": "TSTXX"
+  },
+  {
+    "isin": "US09248U7000",
+    "name": "BlackRock Liquidity Funds: FedFund; Institutional Shares",
+    "symbol": "TFDXX"
+  },
+  {
+    "isin": "US2562101053",
+    "name": "Dodge & Cox Funds: Dodge & Cox Income Fund",
+    "symbol": "DODIX"
+  },
+  {
+    "isin": "US2562061034",
+    "name": "Dodge & Cox Funds: Dodge & Cox International Stock Fund",
+    "symbol": "DODFX"
+  },
+  {
+    "isin": "US2562191062",
+    "name": "Dodge & Cox Funds: Dodge & Cox Stock Fund",
+    "symbol": "DODGX"
+  },
+  {
+    "isin": "US4613081086",
+    "name": "Investment Company of America; Class A Shares",
+    "symbol": "AIVSX"
+  },
+  {
+    "isin": "US38142B5003",
+    "name": "Goldman Sachs Trust: Goldman Sachs Financial Square Treasury Instruments Fund; Institutional Class Shares",
+    "symbol": "FTIXX"
+  },
+  {
+    "isin": "US38141W2733",
+    "name": "Goldman Sachs Trust: Goldman Sachs Financial Square Government Fund; Institutional Class Shares",
+    "symbol": "FGTXX"
+  },
+  {
+    "isin": "US60934N5005",
+    "name": "Federated Hermes Money Market Obligations Trust: Federated Hermes Treasury Obligations Fund; Institutional Shs",
+    "symbol": "TOIXX"
+  },
+  {
+    "isin": "US6089197189",
+    "name": "Federated Hermes Money Market Obligations Trust: Federated Hermes Government Obligations Fund; Premier Shares",
+    "symbol": "GOFXX"
+  },
+  {
+    "isin": "US8085156961",
+    "name": "Charles Schwab Family of Funds: Schwab Value Advantage Money Fund; Ultra Class Shares",
+    "symbol": "SNAXX"
+  },
+  {
+    "isin": "US8085156052",
+    "name": "Charles Schwab Family of Funds: Schwab Value Advantage Money Fund; Investor Class Shares",
+    "symbol": "SWVXX"
+  },
+  {
+    "isin": "US4533201038",
+    "name": "Income Fund of America; Class A Shares",
+    "symbol": "AMECX"
+  },
+  {
+    "isin": "US1405431099",
+    "name": "Capital World Growth & Income Fund; Class A Shares",
+    "symbol": "CWGIX"
+  },
+  {
+    "isin": "US1401931035",
+    "name": "Capital Income Builder; Class A Shares",
+    "symbol": "CAIBX"
+  },
+  {
+    "isin": "US2987068218",
+    "name": "EuroPacific Growth Fund; Class R6 Shares",
+    "symbol": "RERGX"
+  },
+  {
+    "isin": "US8574927062",
+    "name": "State Street Institutional Investment Trust: State Street Institutional US Government Money Market Fund; Prem",
+    "symbol": "GVMXX"
+  },
+  {
+    "isin": "US9219382051",
+    "name": "Vanguard/Wellesley Income Fund, Inc: Vanguard Wellesley Income Fund; Admiral Shares",
+    "symbol": "VWIAX"
+  },
+  {
+    "isin": "US9219352013",
+    "name": "Vanguard/Wellington Fund, Inc; Admiral Shares",
+    "symbol": "VWENX"
+  },
+  {
+    "isin": "US9219105015",
+    "name": "Vanguard World Funds: Vanguard International Growth Fund; Admiral Shares",
+    "symbol": "VWILX"
+  },
+  {
+    "isin": "US9220183043",
+    "name": "Vanguard Windsor Funds: Vanguard Windsor II Fund; Admiral Shares",
+    "symbol": "VWNAX"
+  },
+  {
+    "isin": "US9219312009",
+    "name": "Vanguard Valley Forge Funds: Vanguard Balanced Index Fund; Admiral Shares",
+    "symbol": "VBIAX"
+  },
+  {
+    "isin": "US9219096024",
+    "name": "Vanguard STAR Funds: Vanguard Total International Stock Index Fund; Investor Shares",
+    "symbol": "VGTSX"
+  },
+  {
+    "isin": "US9219097766",
+    "name": "Vanguard STAR Funds: Vanguard Total International Stock Index Fund; Institutional Plus Shares",
+    "symbol": "VTPSX"
+  },
+  {
+    "isin": "US9219097840",
+    "name": "Vanguard STAR Funds: Vanguard Total International Stock Index Fund; Institutional Shares",
+    "symbol": "VTSNX"
+  },
+  {
+    "isin": "US9219098186",
+    "name": "Vanguard STAR Funds: Vanguard Total International Stock Index Fund; Admiral Shares",
+    "symbol": "VTIAX"
+  },
+  {
+    "isin": "US9219088856",
+    "name": "Vanguard Specialized Funds: Vanguard Health Care Fund; Admiral Shares",
+    "symbol": "VGHAX"
+  },
+  {
+    "isin": "US9219086041",
+    "name": "Vanguard Specialized Funds: Vanguard Dividend Growth Fund; Investor Shares",
+    "symbol": "VDIGX"
+  },
+  {
+    "isin": "US9229078780",
+    "name": "Vanguard Municipal Bond Funds: Vanguard Intermediate-Term Tax-Exempt Fund; Admiral Shares",
+    "symbol": "VWIUX"
+  },
+  {
+    "isin": "US9229062016",
+    "name": "Vanguard Money Market Reserves: Vanguard Cash Reserves Federal Money Market Fund; Investor Shares",
+    "symbol": "VMMXX"
+  },
+  {
+    "isin": "US9229065084",
+    "name": "Vanguard Money Market Reserves: Vanguard Cash Reserves Federal Money Market Fund; Admiral Shares",
+    "symbol": "VMRXX"
+  },
+  {
+    "isin": "US9229063006",
+    "name": "Vanguard Money Market Reserves: Vanguard Federal Money Market Fund; Investor Shares",
+    "symbol": "VMFXX"
+  },
+  {
+    "isin": "US9220401007",
+    "name": "Vanguard Institutional Index Fund: Vanguard Institutional Index Fund; Institutional Shares",
+    "symbol": "VINIX"
+  },
+  {
+    "isin": "US9220402096",
+    "name": "Vanguard Institutional Index Fund: Vanguard Institutional Index Fund; Institutional Plus Shares",
+    "symbol": "VIIIX"
+  },
+  {
+    "isin": "US9499211269",
+    "name": "Wells Fargo Funds Trust: Wells Fargo Government Money Market Fund; Select Class Shares",
+    "symbol": "WFFXX"
+  },
+  {
+    "isin": "US94975P4054",
+    "name": "Wells Fargo Funds Trust: Wells Fargo Government Money Market Fund; Institutional Class Shares",
+    "symbol": "GVIXX"
+  },
+  {
+    "isin": "US9229083061",
+    "name": "Vanguard Index Funds: Vanguard Total Stock Market Index Fund; Investor Class Shares",
+    "symbol": "VTSMX"
+  },
+  {
+    "isin": "US9229083301",
+    "name": "Vanguard Index Funds: Vanguard Total Stock Market Index Fund; Institutional Select Class Shares",
+    "symbol": "VSTSX"
+  },
+  {
+    "isin": "US9229083558",
+    "name": "Vanguard Index Funds: Vanguard Total Stock Market Index Fund; Institutional Plus Class Shares",
+    "symbol": "VSMPX"
+  },
+  {
+    "isin": "US9229088011",
+    "name": "Vanguard Index Funds: Vanguard Total Stock Market Index Fund; Institutional Class Shares",
+    "symbol": "VITSX"
+  },
+  {
+    "isin": "US9229087286",
+    "name": "Vanguard Index Funds: Vanguard Total Stock Market Index Fund; Admiral Class Shares",
+    "symbol": "VTSAX"
+  },
+  {
+    "isin": "US9229086866",
+    "name": "Vanguard Index Funds: Vanguard Small-Cap Index Fund; Admiral Shares",
+    "symbol": "VSMAX"
+  },
+  {
+    "isin": "US9229086452",
+    "name": "Vanguard Index Funds: Vanguard Mid-Cap Index Fund; Admiral Shares",
+    "symbol": "VIMAX"
+  },
+  {
+    "isin": "US9229086601",
+    "name": "Vanguard Index Funds: Vanguard Growth Index Fund; Admiral Class Shares",
+    "symbol": "VIGAX"
+  },
+  {
+    "isin": "US9229087104",
+    "name": "Vanguard Index Funds: Vanguard 500 Index Fund; Admiral Shares",
+    "symbol": "VFIAX"
+  },
+  {
+    "isin": "US9229083483",
+    "name": "Vanguard Index Funds: Vanguard 500 Index Fund; Institutional Select Shares",
+    "symbol": "VFFSX"
+  },
+  {
+    "isin": "US9220318367",
+    "name": "Vanguard Fixed Income Securities Funds: Vanguard Short-Term Investment-Grade Fund; Admiral Shares",
+    "symbol": "VFSUX"
+  },
+  {
+    "isin": "US9219213009",
+    "name": "Vanguard Fenway Funds: Vanguard Equity Income Fund; Admiral Shares",
+    "symbol": "VEIRX"
+  },
+  {
+    "isin": "US92202E4098",
+    "name": "Vanguard Chester Funds: Vanguard Target Retirement 2025 Fund; Investor Class Shares",
+    "symbol": "VTTVX"
+  },
+  {
+    "isin": "US92202E5087",
+    "name": "Vanguard Chester Funds: Vanguard Target Retirement 2035 Fund; Investor Class Shares",
+    "symbol": "VTTHX"
+  },
+  {
+    "isin": "US92202E8883",
+    "name": "Vanguard Chester Funds: Vanguard Target Retirement 2030 Fund; Investor Class Shares",
+    "symbol": "VTHRX"
+  },
+  {
+    "isin": "US9219362095",
+    "name": "Vanguard Chester Funds: Vanguard PRIMECAP Fund; Admiral Shares",
+    "symbol": "VPMAX"
+  },
+  {
+    "isin": "US92202E7554",
+    "name": "Vanguard Chester Funds: Vanguard Institutional Target Retirement 2040 Fund; Institutional Class Shares",
+    "symbol": "VIRSX"
+  },
+  {
+    "isin": "US92202E7638",
+    "name": "Vanguard Chester Funds: Vanguard Institutional Target Retirement 2035 Fund; Institutional Class Shares",
+    "symbol": "VITFX"
+  },
+  {
+    "isin": "US92202E7711",
+    "name": "Vanguard Chester Funds: Vanguard Institutional Target Retirement 2030 Fund; Institutional Class Shares",
+    "symbol": "VTTWX"
+  },
+  {
+    "isin": "US92202E7893",
+    "name": "Vanguard Chester Funds: Vanguard Institutional Target Retirement 2025 Fund; Institutional Class Shares",
+    "symbol": "VRIVX"
+  },
+  {
+    "isin": "US92203J3086",
+    "name": "Vanguard Charlotte Funds: Vanguard Total International Bond Index Fund; Admiral Class Shares",
+    "symbol": "VTABX"
+  },
+  {
+    "isin": "US9219375048",
+    "name": "Vanguard Bond Index Funds: Vanguard Total Bond Market Index Fund; Institutional Shares",
+    "symbol": "VBTIX"
+  },
+  {
+    "isin": "US9219376038",
+    "name": "Vanguard Bond Index Funds: Vanguard Total Bond Market Index Fund; Admiral Shares",
+    "symbol": "VBTLX"
+  },
+  {
+    "isin": "US92203C2044",
+    "name": "Vanguard Bond Index Funds: Vanguard Total Bond Market II Index Fund; Institutional Shares",
+    "symbol": "VTBNX"
+  },
+  {
+    "isin": "US92203C1053",
+    "name": "Vanguard Bond Index Funds: Vanguard Total Bond Market II Index Fund; Investor Shares",
+    "symbol": "VTBIX"
+  },
+  {
+    "isin": "US9219321091",
+    "name": "Vanguard Admiral Funds: Vanguard Treasury Money Market Fund; Investor Shares",
+    "symbol": "VUSXX"
+  },
+  {
+    "isin": "US77954M1053",
+    "name": "T Rowe Price Capital Appreciation Fund",
+    "symbol": "PRWCX"
+  },
+  {
+    "isin": "US77954Q1067",
+    "name": "T Rowe Price Blue Chip Growth Fund, Inc",
+    "symbol": "TRBCX"
+  },
+  {
+    "isin": "US9393301067",
+    "name": "Washington Mutual Investors Fund; Class A Shares",
+    "symbol": "AWSHX"
+  },
+  {
+    "isin": "US8085098551",
+    "name": "Schwab Capital Trust: Schwab S&P 500 Index Fund",
+    "symbol": "SWPPX"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "symbol": "AAPL",
+    "shariahComplianceStatus": "HALAL",
+    "companyName": "Apple Inc",
+    "lastUpdate": "2023-10-03T10:09:46.048333",
+    "complianceRanking": 1,
+    "revenueBreakdown": {
+      "halalRatio": 95.38,
+      "notHalalRatio": 0.9327169,
+      "doubtfulRatio": 3.6912692,
+      "doubtfulRevenue": 10946569799.156307,
+      "halalRevenue": 282852260938,
+      "notHalalRevenue": 2766000059.7315607,
+      "status": "Pass"
+    },
+    "interestBearingSecuritiesAndAssets": {
+      "amount": 166543001086.7925,
+      "ratio": 7.0243793,
+      "status": "Pass"
+    },
+    "interestBearingDebt": {
+      "amount": 109280005511.1,
+      "ratio": 4.609165,
+      "status": "Pass"
+    },
+    "reportDate": "2023-07-01",
+    "reportSource": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000077/aapl-20230701.htm"
+  },
+  {
+    "symbol": "MSFT",
+    "shariahComplianceStatus": "NOT HALAL",
+    "companyName": "Microsoft Corp",
+    "lastUpdate": "2023-08-22T12:08:30.347145",
+    "complianceRanking": 0,
+    "revenueBreakdown": {
+      "halalRatio": 93.21,
+      "notHalalRatio": 5.302345,
+      "doubtfulRatio": 1.4884607,
+      "doubtfulRevenue": 3205400031.2685966,
+      "halalRevenue": 200727735000,
+      "notHalalRevenue": 11418599524.736404,
+      "status": "Fail"
+    },
+    "interestBearingSecuritiesAndAssets": {
+      "amount": 116555999562.02126,
+      "ratio": 5.82454,
+      "status": "Pass"
+    },
+    "interestBearingDebt": {
+      "amount": 64304000224.18969,
+      "ratio": 3.2134016,
+      "status": "Pass"
+    },
+    "reportDate": "2023-06-30",
+    "reportSource": "https://www.sec.gov/ix?doc=/Archives/edgar/data/789019/000095017023035122/msft-20230630.htm"
+  },
+  {
+    "symbol": "GOOG",
+    "shariahComplianceStatus": "DOUBTFUL",
+    "companyName": "Alphabet Inc",
+    "lastUpdate": "2023-07-28T06:19:01.134312",
+    "complianceRanking": 0,
+    "revenueBreakdown": {
+      "halalRatio": 67.73,
+      "notHalalRatio": 1.5758034,
+      "doubtfulRatio": 30.69911,
+      "doubtfulRevenue": 45430998952.8656,
+      "halalRevenue": 100232272400,
+      "notHalalRevenue": 2331999934.2393875,
+      "status": "Fail"
+    },
+    "interestBearingSecuritiesAndAssets": {
+      "amount": 113929003390.33751,
+      "ratio": 7.825399,
+      "status": "Pass"
+    },
+    "interestBearingDebt": {
+      "amount": 13705000046.83125,
+      "ratio": 0.9413502,
+      "status": "Pass"
+    },
+    "reportDate": "2023-06-30",
+    "reportSource": "https://www.sec.gov/ix?doc=/Archives/edgar/data/1652044/000165204423000070/goog-20230630.htm"
+  },
+  {
+    "symbol": "QCKSF",
+    "shariahComplianceStatus": "NOT_UNDER_COVERAGE"
+  }
+]

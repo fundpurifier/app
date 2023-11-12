@@ -1,0 +1,1 @@
+export const CASH = "$"; // symbol to denote cash accumulated in the portfolio

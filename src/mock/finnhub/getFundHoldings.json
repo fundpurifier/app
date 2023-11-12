@@ -1,0 +1,407 @@
+{
+  "atDate": "2023-09-30",
+  "holdings": [
+    {
+      "assetType": "Equity",
+      "cusip": "037833100",
+      "isin": "US0378331005",
+      "name": "Apple Inc",
+      "percent": 8.53899,
+      "share": 1989550,
+      "symbol": "AAPL",
+      "value": 340630856
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "532457108",
+      "isin": "US5324571083",
+      "name": "Eli Lilly and Co",
+      "percent": 4.6952,
+      "share": 348700,
+      "symbol": "LLY",
+      "value": 187297231
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "670100205",
+      "isin": "US6701002056",
+      "name": "Novo Nordisk A/S ADR",
+      "percent": 4.56669,
+      "share": 2003200,
+      "symbol": "NVO",
+      "value": 182171008
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "N07059210",
+      "isin": "USN070592100",
+      "name": "ASML Holding NV ADR",
+      "percent": 4.54504,
+      "share": 308000,
+      "symbol": "ASML",
+      "value": 181307280
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "594918104",
+      "isin": "US5949181045",
+      "name": "Microsoft Corp",
+      "percent": 4.3534,
+      "share": 550000,
+      "symbol": "MSFT",
+      "value": 173662500
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "00724F101",
+      "isin": "US00724F1012",
+      "name": "Adobe Inc",
+      "percent": 4.09799,
+      "share": 320600,
+      "symbol": "ADBE",
+      "value": 163473940
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "461202103",
+      "isin": "US4612021034",
+      "name": "Intuit Inc",
+      "percent": 3.65806,
+      "share": 285600,
+      "symbol": "INTU",
+      "value": 145924464
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "02079K305",
+      "isin": "US02079K3059",
+      "name": "Alphabet Inc Class A",
+      "percent": 3.52973,
+      "share": 1076000,
+      "symbol": "GOOGL",
+      "value": 140805360
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "007903107",
+      "isin": "US0079031078",
+      "name": "Advanced Micro Devices Inc",
+      "percent": 3.09301,
+      "share": 1200000,
+      "symbol": "AMD",
+      "value": 123384000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "171340102",
+      "isin": "US1713401024",
+      "name": "Church & Dwight Co Inc",
+      "percent": 2.69047,
+      "share": 1171300,
+      "symbol": "CHD",
+      "value": 107326219
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "874039100",
+      "isin": "US8740391003",
+      "name": "Taiwan Semiconductor Manufacturing Co Ltd ADR",
+      "percent": 2.6379,
+      "share": 1210921,
+      "symbol": "TSM",
+      "value": 105229035
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "872540109",
+      "isin": "US8725401090",
+      "name": "TJX Companies Inc",
+      "percent": 2.56227,
+      "share": 1150000,
+      "symbol": "TJX",
+      "value": 102212000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "053332102",
+      "isin": "US0533321024",
+      "name": "AutoZone Inc",
+      "percent": 2.54692,
+      "share": 40000,
+      "symbol": "AZO",
+      "value": 101599600
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "00846U101",
+      "isin": "US00846U1016",
+      "name": "Agilent Technologies Inc",
+      "percent": 2.52281,
+      "share": 900000,
+      "symbol": "A",
+      "value": 100638000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "031162100",
+      "isin": "US0311621009",
+      "name": "Amgen Inc",
+      "percent": 2.23477,
+      "share": 331700,
+      "symbol": "AMGN",
+      "value": 89147692
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "620076307",
+      "isin": "US6200763075",
+      "name": "Motorola Solutions Inc",
+      "percent": 2.11561,
+      "share": 310000,
+      "symbol": "MSI",
+      "value": 84394400
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "81762P102",
+      "isin": "US81762P1021",
+      "name": "ServiceNow Inc",
+      "percent": 2.10181,
+      "share": 150000,
+      "symbol": "NOW",
+      "value": 83844000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "548661107",
+      "isin": "US5486611073",
+      "name": "Lowe's Companies Inc",
+      "percent": 2.08407,
+      "share": 400000,
+      "symbol": "LOW",
+      "value": 83136000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "863667101",
+      "isin": "US8636671013",
+      "name": "Stryker Corp",
+      "percent": 2.05511,
+      "share": 300000,
+      "symbol": "SYK",
+      "value": 81981000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "G8994E103",
+      "isin": "IE00BK9ZQ967",
+      "name": "Trane Technologies PLC Class A",
+      "percent": 2.03463,
+      "share": 400000,
+      "symbol": "TT",
+      "value": 81164000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "896239100",
+      "isin": "US8962391004",
+      "name": "Trimble Inc",
+      "percent": 2.02526,
+      "share": 1500000,
+      "symbol": "TRMB",
+      "value": 80790000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "17275R102",
+      "isin": "US17275R1023",
+      "name": "Cisco Systems Inc",
+      "percent": 2.0215,
+      "share": 1500000,
+      "symbol": "CSCO",
+      "value": 80640000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "036752103",
+      "isin": "US0367521038",
+      "name": "Elevance Health Inc",
+      "percent": 1.98656,
+      "share": 182000,
+      "symbol": "ELV",
+      "value": 79246440
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "550021109",
+      "isin": "US5500211090",
+      "name": "Lululemon Athletica Inc",
+      "percent": 1.98164,
+      "share": 205000,
+      "symbol": "LULU",
+      "value": 79050050
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "68389X105",
+      "isin": "US68389X1054",
+      "name": "Oracle Corp",
+      "percent": 1.95743,
+      "share": 737200,
+      "symbol": "ORCL",
+      "value": 78084224
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "907818108",
+      "isin": "US9078181081",
+      "name": "Union Pacific Corp",
+      "percent": 1.78662,
+      "share": 350000,
+      "symbol": "UNP",
+      "value": 71270500
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "046353108",
+      "isin": "US0463531089",
+      "name": "AstraZeneca PLC ADR",
+      "percent": 1.73157,
+      "share": 1020000,
+      "symbol": "AZN",
+      "value": 69074400
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "518439104",
+      "isin": "US5184391044",
+      "name": "The Estee Lauder Companies Inc Class A",
+      "percent": 1.66176,
+      "share": 458594,
+      "symbol": "EL",
+      "value": 66289763
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "G51502105",
+      "isin": "IE00BY7QL619",
+      "name": "Johnson Controls International PLC",
+      "percent": 1.65934,
+      "share": 1244000,
+      "symbol": "JCI",
+      "value": 66193240
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "49338L103",
+      "isin": "US49338L1035",
+      "name": "Keysight Technologies Inc",
+      "percent": 1.65838,
+      "share": 500000,
+      "symbol": "KEYS",
+      "value": 66155000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "58933Y105",
+      "isin": "US58933Y1055",
+      "name": "Merck & Co Inc",
+      "percent": 1.65169,
+      "share": 640000,
+      "symbol": "MRK",
+      "value": 65888000
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "22052L104",
+      "isin": "US22052L1044",
+      "name": "Corteva Inc",
+      "percent": 1.64158,
+      "share": 1280000,
+      "symbol": "CTVA",
+      "value": 65484800
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "366651107",
+      "isin": "US3666511072",
+      "name": "Gartner Inc",
+      "percent": 1.5496,
+      "share": 179900,
+      "symbol": "IT",
+      "value": 61815439
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "478160104",
+      "isin": "US4781601046",
+      "name": "Johnson & Johnson",
+      "percent": 1.48268,
+      "share": 379750,
+      "symbol": "JNJ",
+      "value": 59146062
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "533900106",
+      "isin": "US5339001068",
+      "name": "Lincoln Electric Holdings Inc",
+      "percent": 1.2842,
+      "share": 281800,
+      "symbol": "LECO",
+      "value": 51228422
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "655844108",
+      "isin": "US6558441084",
+      "name": "Norfolk Southern Corp",
+      "percent": 1.10483,
+      "share": 223800,
+      "symbol": "NSC",
+      "value": 44072934
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "11135F101",
+      "isin": "US11135F1012",
+      "name": "Broadcom Inc",
+      "percent": 0.93695,
+      "share": 45000,
+      "symbol": "AVGO",
+      "value": 37376100
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "45168D104",
+      "isin": "US45168D1046",
+      "name": "IDEXX Laboratories Inc",
+      "percent": 0.90981,
+      "share": 83000,
+      "symbol": "IDXX",
+      "value": 36293410
+    },
+    {
+      "assetType": "Equity",
+      "cusip": "311900104",
+      "isin": "US3119001044",
+      "name": "Fastenal Co",
+      "percent": 0.77485,
+      "share": 565700,
+      "symbol": "FAST",
+      "value": 30909848
+    },
+    {
+      "assetType": "Other",
+      "cusip": null,
+      "isin": null,
+      "name": "Cash At Bank",
+      "percent": 3.52926,
+      "share": 140786748,
+      "symbol": null,
+      "value": 140786748
+    }
+  ],
+  "numberOfHoldings": 40,
+  "symbol": "AMAGX"
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "isin": "US81369Y4070",
+    "name": "Consumer Discretionary Select Sector SPDR Fund",
+    "symbol": "XLY"
+  },
+  {
+    "isin": "US81369Y3080",
+    "name": "Consumer Staples Select Sector SPDR Fund",
+    "symbol": "XLP"
+  },
+  {
+    "isin": "US81369Y5069",
+    "name": "Energy Select Sector SPDR Fund",
+    "symbol": "XLE"
+  },
+  {
+    "isin": "US81369Y6059",
+    "name": "Financial Select Sector SPDR Fund",
+    "symbol": "XLF"
+  },
+  {
+    "isin": "US81369Y2090",
+    "name": "Health Care Select Sector SPDR Fund",
+    "symbol": "XLV"
+  },
+  {
+    "isin": "US81369Y7040",
+    "name": "Industrial Select Sector SPDR Fund",
+    "symbol": "XLI"
+  },
+  {
+    "isin": "US46138G6492",
+    "name": "Invesco NASDAQ 100 ETF",
+    "symbol": "QQQM"
+  },
+  {
+    "isin": "US46090E1038",
+    "name": "Invesco QQQ Trust Series I",
+    "symbol": "QQQ"
+  },
+  {
+    "isin": "US46137V3574",
+    "name": "Invesco S&P 500 Equal Weight ETF",
+    "symbol": "RSP"
+  },
+  {
+    "isin": "US46436E7186",
+    "name": "iShares 0-3 Month Treasury Bond ETF",
+    "symbol": "SGOV"
+  },
+  {
+    "isin": "US4642874576",
+    "name": "iShares 1-3 Year Treasury Bond ETF",
+    "symbol": "SHY"
+  },
+  {
+    "isin": "US4642886463",
+    "name": "iShares 1-5 Year Investment Grade Corporate Bond ETF",
+    "symbol": "IGSB"
+  },
+  {
+    "isin": "US4642874329",
+    "name": "iShares 20+ Year Treasury Bond ETF",
+    "symbol": "TLT"
+  },
+  {
+    "isin": "US4642874402",
+    "name": "iShares 7-10 Year Treasury Bond ETF",
+    "symbol": "IEF"
+  },
+  {
+    "isin": "US46434V6213",
+    "name": "iShares Core Dividend Growth ETF",
+    "symbol": "DGRO"
+  },
+  {
+    "isin": "US46432F8427",
+    "name": "iShares Core MSCI EAFE ETF",
+    "symbol": "IEFA"
+  },
+  {
+    "isin": "US46434G1031",
+    "name": "iShares Core MSCI Emerging Markets ETF",
+    "symbol": "IEMG"
+  },
+  {
+    "isin": "US46432F8344",
+    "name": "iShares Core MSCI Total International Stock ETF",
+    "symbol": "IXUS"
+  },
+  {
+    "isin": "US4642872000",
+    "name": "iShares Core S&P 500 ETF",
+    "symbol": "IVV"
+  },
+  {
+    "isin": "US4642875078",
+    "name": "iShares Core S&P Mid-Cap ETF",
+    "symbol": "IJH"
+  },
+  {
+    "isin": "US4642878049",
+    "name": "iShares Core S&P Small Cap ETF",
+    "symbol": "IJR"
+  },
+  {
+    "isin": "US4642871507",
+    "name": "iShares Core S&P Total U.S. Stock Market ETF",
+    "symbol": "ITOT"
+  },
+  {
+    "isin": "US46434V6130",
+    "name": "iShares Core Total USD Bond Market ETF",
+    "symbol": "IUSB"
+  },
+  {
+    "isin": "US4642872265",
+    "name": "iShares Core U.S. Aggregate Bond ETF",
+    "symbol": "AGG"
+  },
+  {
+    "isin": "US4642852044",
+    "name": "iShares Gold Trust",
+    "symbol": "IAU"
+  },
+  {
+    "isin": "US4642872422",
+    "name": "iShares iBoxx $ Investment Grade Corporate Bond ETF",
+    "symbol": "LQD"
+  },
+  {
+    "isin": "US4642885887",
+    "name": "iShares MBS ETF",
+    "symbol": "MBB"
+  },
+  {
+    "isin": "US4642882579",
+    "name": "iShares MSCI ACWI ETF",
+    "symbol": "ACWI"
+  },
+  {
+    "isin": "US4642874659",
+    "name": "iShares MSCI EAFE ETF",
+    "symbol": "EFA"
+  },
+  {
+    "isin": "US4642888774",
+    "name": "iShares MSCI EAFE Value ETF",
+    "symbol": "EFV"
+  },
+  {
+    "isin": "US4642872349",
+    "name": "iShares MSCI Emerging Markets ETF",
+    "symbol": "EEM"
+  },
+  {
+    "isin": "US46429B6974",
+    "name": "iShares MSCI USA Min Vol Factor ETF",
+    "symbol": "USMV"
+  },
+  {
+    "isin": "US46432F3394",
+    "name": "iShares MSCI USA Quality Factor ETF",
+    "symbol": "QUAL"
+  },
+  {
+    "isin": "US4642884146",
+    "name": "iShares National Muni Bond ETF",
+    "symbol": "MUB"
+  },
+  {
+    "isin": "US4642876225",
+    "name": "iShares Russell 1000 ETF",
+    "symbol": "IWB"
+  },
+  {
+    "isin": "US4642876142",
+    "name": "iShares Russell 1000 Growth ETF",
+    "symbol": "IWF"
+  },
+  {
+    "isin": "US4642875987",
+    "name": "iShares Russell 1000 Value ETF",
+    "symbol": "IWD"
+  },
+  {
+    "isin": "US4642876555",
+    "name": "iShares Russell 2000 ETF",
+    "symbol": "IWM"
+  },
+  {
+    "isin": "US4642874998",
+    "name": "iShares Russell Midcap ETF",
+    "symbol": "IWR"
+  },
+  {
+    "isin": "US4642873099",
+    "name": "iShares S&P 500 Growth ETF",
+    "symbol": "IVW"
+  },
+  {
+    "isin": "US4642874089",
+    "name": "iShares S&P 500 Value ETF",
+    "symbol": "IVE"
+  },
+  {
+    "isin": "US4642871689",
+    "name": "iShares Select Dividend ETF",
+    "symbol": "DVY"
+  },
+  {
+    "isin": "US4642886794",
+    "name": "iShares Short Treasury Bond ETF",
+    "symbol": "SHV"
+  },
+  {
+    "isin": "US4642871762",
+    "name": "iShares TIPS Bond ETF",
+    "symbol": "TIP"
+  },
+  {
+    "isin": "US46429B2676",
+    "name": "iShares U.S. Treasury Bond ETF",
+    "symbol": "GOVT"
+  },
+  {
+    "isin": "US46641Q3323",
+    "name": "JPMorgan Equity Premium Income ETF",
+    "symbol": "JEPI"
+  },
+  {
+    "isin": "US46641Q8371",
+    "name": "JPMorgan Ultra-Short Income ETF",
+    "symbol": "JPST"
+  },
+  {
+    "isin": "US69374H8815",
+    "name": "Pacer US Cash Cows 100 ETF",
+    "symbol": "COWZ"
+  },
+  {
+    "isin": "US74347X8314",
+    "name": "ProShares UltraPro QQQ",
+    "symbol": "TQQQ"
+  },
+  {
+    "isin": "US8085248057",
+    "name": "Schwab International Equity ETF",
+    "symbol": "SCHF"
+  },
+  {
+    "isin": "US8085241029",
+    "name": "Schwab U.S. Broad Market ETF",
+    "symbol": "SCHB"
+  },
+  {
+    "isin": "US8085242019",
+    "name": "Schwab U.S. Large-Cap ETF",
+    "symbol": "SCHX"
+  },
+  {
+    "isin": "US8085243009",
+    "name": "Schwab U.S. Large-Cap Growth ETF",
+    "symbol": "SCHG"
+  },
+  {
+    "isin": "US8085247976",
+    "name": "Schwab US Dividend Equity ETF",
+    "symbol": "SCHD"
+  },
+  {
+    "isin": "US78468R6633",
+    "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+    "symbol": "BIL"
+  },
+  {
+    "isin": "US78467X1090",
+    "name": "SPDR Dow Jones Industrial Average ETF Trust",
+    "symbol": "DIA"
+  },
+  {
+    "isin": "US78463V1070",
+    "name": "SPDR Gold Shares",
+    "symbol": "GLD"
+  },
+  {
+    "isin": "US78463X8891",
+    "name": "SPDR Portfolio Developed World ex-US ETF",
+    "symbol": "SPDW"
+  },
+  {
+    "isin": "US78464A8541",
+    "name": "SPDR Portfolio S&P 500 ETF",
+    "symbol": "SPLG"
+  },
+  {
+    "isin": "US78464A4094",
+    "name": "SPDR Portfolio S&P 500 Growth ETF",
+    "symbol": "SPYG"
+  },
+  {
+    "isin": "US78464A5083",
+    "name": "SPDR Portfolio S&P 500 Value ETF",
+    "symbol": "SPYV"
+  },
+  {
+    "isin": "US78462F1030",
+    "name": "SPDR S&P 500 ETF Trust",
+    "symbol": "SPY"
+  },
+  {
+    "isin": "US78464A7634",
+    "name": "SPDR S&P Dividend ETF",
+    "symbol": "SDY"
+  },
+  {
+    "isin": "US78467Y1073",
+    "name": "SPDR S&P Midcap 400 ETF Trust",
+    "symbol": "MDY"
+  },
+  {
+    "isin": "US81369Y8030",
+    "name": "Technology Select Sector SPDR Fund",
+    "symbol": "XLK"
+  },
+  {
+    "isin": "US9219088443",
+    "name": "Vanguard Dividend Appreciation ETF",
+    "symbol": "VIG"
+  },
+  {
+    "isin": "US9229086528",
+    "name": "Vanguard Extended Market ETF",
+    "symbol": "VXF"
+  },
+  {
+    "isin": "US9220427754",
+    "name": "Vanguard FTSE All-World ex-US Index Fund",
+    "symbol": "VEU"
+  },
+  {
+    "isin": "US9219438580",
+    "name": "Vanguard FTSE Developed Markets ETF",
+    "symbol": "VEA"
+  },
+  {
+    "isin": "US9220428588",
+    "name": "Vanguard FTSE Emerging Markets ETF",
+    "symbol": "VWO"
+  },
+  {
+    "isin": "US9220428745",
+    "name": "Vanguard FTSE Europe ETF",
+    "symbol": "VGK"
+  },
+  {
+    "isin": "US9229087369",
+    "name": "Vanguard Growth ETF",
+    "symbol": "VUG"
+  },
+  {
+    "isin": "US92204A5048",
+    "name": "Vanguard Health Care ETF",
+    "symbol": "VHT"
+  },
+  {
+    "isin": "US9219464065",
+    "name": "Vanguard High Dividend Yield Index ETF",
+    "symbol": "VYM"
+  },
+  {
+    "isin": "US92204A7028",
+    "name": "Vanguard Information Technology ETF",
+    "symbol": "VGT"
+  },
+  {
+    "isin": "US9219378190",
+    "name": "Vanguard Intermediate-Term Bond ETF",
+    "symbol": "BIV"
+  },
+  {
+    "isin": "US92206C8709",
+    "name": "Vanguard Intermediate-Term Corporate Bond ETF",
+    "symbol": "VCIT"
+  },
+  {
+    "isin": "US92206C7065",
+    "name": "Vanguard Intermediate-Term Treasury ETF",
+    "symbol": "VGIT"
+  },
+  {
+    "isin": "US9229086379",
+    "name": "Vanguard Large-Cap ETF",
+    "symbol": "VV"
+  },
+  {
+    "isin": "US9219108167",
+    "name": "Vanguard Mega Cap Growth ETF",
+    "symbol": "MGK"
+  },
+  {
+    "isin": "US9229086296",
+    "name": "Vanguard Mid-Cap ETF",
+    "symbol": "VO"
+  },
+  {
+    "isin": "US9229085124",
+    "name": "Vanguard Mid-Cap Value ETF",
+    "symbol": "VOE"
+  },
+  {
+    "isin": "US92206C7719",
+    "name": "Vanguard Mortgage-Backed Securities ETF",
+    "symbol": "VMBS"
+  },
+  {
+    "isin": "US9229085538",
+    "name": "Vanguard Real Estate ETF",
+    "symbol": "VNQ"
+  },
+  {
+    "isin": "US92206C6802",
+    "name": "Vanguard Russell 1000 Growth ETF",
+    "symbol": "VONG"
+  },
+  {
+    "isin": "US9229083632",
+    "name": "Vanguard S&P 500 ETF",
+    "symbol": "VOO"
+  },
+  {
+    "isin": "US9219378273",
+    "name": "Vanguard Short-Term Bond ETF",
+    "symbol": "BSV"
+  },
+  {
+    "isin": "US92206C4096",
+    "name": "Vanguard Short-Term Corporate Bond ETF",
+    "symbol": "VCSH"
+  },
+  {
+    "isin": "US92206C1027",
+    "name": "Vanguard Short-Term Treasury ETF",
+    "symbol": "VGSH"
+  },
+  {
+    "isin": "US9229086114",
+    "name": "Vanguard Small Cap Value ETF",
+    "symbol": "VBR"
+  },
+  {
+    "isin": "US9229087518",
+    "name": "Vanguard Small-Cap ETF",
+    "symbol": "VB"
+  },
+  {
+    "isin": "US9229077469",
+    "name": "Vanguard Tax-Exempt Bond ETF",
+    "symbol": "VTEB"
+  },
+  {
+    "isin": "US9219378356",
+    "name": "Vanguard Total Bond Market ETF",
+    "symbol": "BND"
+  },
+  {
+    "isin": "US92203J4076",
+    "name": "Vanguard Total International Bond ETF",
+    "symbol": "BNDX"
+  },
+  {
+    "isin": "US9219097683",
+    "name": "Vanguard Total International Stock ETF",
+    "symbol": "VXUS"
+  },
+  {
+    "isin": "US9229087690",
+    "name": "Vanguard Total Stock Market ETF",
+    "symbol": "VTI"
+  },
+  {
+    "isin": "US9220427424",
+    "name": "Vanguard Total World Stock ETF",
+    "symbol": "VT"
+  },
+  {
+    "isin": "US9229087443",
+    "name": "Vanguard Value ETF",
+    "symbol": "VTV"
+  },
+  {
+    "isin": "US97717Y5270",
+    "name": "WisdomTree Floating Rate Treasury Fund",
+    "symbol": "USFR"
+  },
+  {
+    "isin": "US25434V7082",
+    "name": "Dimensional U.S. Core Equity 2 ETF",
+    "symbol": "DFAC"
+  }
+]
