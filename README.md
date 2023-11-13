@@ -119,7 +119,7 @@ Let's cover the main parts of the project `src/` directory:
 ## Authors
 
 - Yazin Alirhayim ([@yazinsai](https://x.com/yazinsai))
-- Omar Zeineddine ([@oz](https://github.com/omar-zeineddine/))
+- Omar Zeineddine ([@omar-zeineddine](https://github.com/omar-zeineddine/))
 
 ## License
 
