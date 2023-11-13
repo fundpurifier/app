@@ -1,4 +1,4 @@
-![Fund Purifier Cover](https://fundpurifier.com/static/github-cover.png)
+![Fund Purifier - Github cover](https://fundpurifier.com/static/github-cover.png)
 
 <div align="center"><strong>Fund Purifier</strong></div>
 <div align="center">Invest in halal versions of popular US funds.<br />Built-in Shariah-compliance monitoring, smart rebalancing and more..</div>
