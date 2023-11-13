@@ -95,11 +95,12 @@ export async function previewOrders(
   if (isLiquidation) {
     // Sell the entire position
     const positionSlicesWithOrderAmount: PositionSliceWithQtyOrder[] = positionSlices
+      .filter(p => p.position && p.position.qty > 0)
       .map((p) => {
         return {
           ...p,
           orderType: 'qty',
-          qty: p.position ? p.position.qty : 0,
+          qty: -1 * p.position!.qty,
           sharePrice: price(p.listedAsset.symbol)
         }
       })
