@@ -47,6 +47,7 @@ Oh, and one more thing. It's **completely open-source** 💥
 ```sh
 git clone https://github.com/fundpurifier/app.git
 npm install
+npx prisma migrate dev # create the database
 ```
 
 #### Register for 3rd Party Services
