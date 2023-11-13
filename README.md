@@ -33,14 +33,14 @@ On top of that, we also support:
 
 ... and more!
 
-It's also **100% Free**! You can use it today by signing up at [https://fundpurifier.com](fundpurifier.com).
+It's also **100% Free**! You can use it today by signing up at [fundpurifier.com](https://fundpurifier.com).
 
 Oh, and one more thing. It's **completely open-source** 💥
 
+## Development
+
 > [!IMPORTANT]
 > Just looking to **use the Fund Purifier**? Use the hosted version at [app.fundpurifier.com](https://app.fundpurifier.com)
-
-## Development
 
 #### Install dependencies
 
@@ -90,7 +90,8 @@ FINANCIAL_MODELING_PREP_KEY=
 
 **Note:** These are **paid services**. The total cost is around $20k/year.
 
-**IMPORTANT:** You do not need to sign up to these services to run the Fund Purifier locally. **We provide mocked responses in development** instead.
+> [!IMPORTANT]
+> You do **not** need to sign up to these services to run the Fund Purifier locally. **We provide mocked responses in development** instead.
 
 ## Tech Stack
 
@@ -118,7 +119,7 @@ Let's cover the main parts of the project `src/` directory:
 ## Authors
 
 - Yazin Alirhayim ([@yazinsai](https://x.com/yazinsai))
-- Omar Zeineddine ([@oz](https://x.com/oz))
+- Omar Zeineddine ([@oz](https://github.com/omar-zeineddine/))
 
 ## License
 
