@@ -55,7 +55,7 @@ export const LiquidateNonCompliantAssets = ({
 
   // Assemble liquidations by portfolio
   const liquidationsByPortfolioId = _.groupBy(
-    liquidations,
+    liquidations.filter((l) => l.position), // Filter out liquidations with no positions
     (l) => l.portfolio.id
   );
   // Sort liquidations by position.marketValue
@@ -70,8 +70,13 @@ export const LiquidateNonCompliantAssets = ({
   // Find stats
   const symbols = _.uniqBy(liquidations, (l) => l.listedAsset.symbol);
   const total = +liquidations.reduce(
-    (sum, liquidation) =>
-      sum.add((liquidation.position as PositionWithMarketValue)?.marketValue ?? 0),
+    (sum, liquidation) => {
+      const position = liquidation.position as PositionWithMarketValue;
+      if (position) {
+        return sum.add(position.marketValue);
+      }
+      return sum;
+    },
     Big(0)
   );
 
