@@ -10,6 +10,7 @@ import { generateId } from "@/helpers";
 import Alpaca from "@/lib/brokers/alpaca";
 import { createSlicesForPositions } from "@/services/portfolio/order";
 import { queueReinvestmentJob } from "./reinvestOnSell";
+import { Position } from "@/services/portfolio/types";
 
 const DELAY_PERIOD = 1000 * 60 * 60 * 24; // 24 hours
 
@@ -141,24 +142,15 @@ export async function autoLiquidateSlices({
       }
 
       // Submit liquidation orders
-      const orders = await Promise.all(
+      const orders = (await Promise.all(
         positions.map(async (position) => {
           const slice = portfolio.slices.find(
             (s) => s.listedAsset.symbol === position.symbol
-          )!;
+          );
 
-          const order = await alpaca.createOrder({
-            symbol: position.symbol,
-            qty: +position.qty,
-            side: "sell",
-            type: "market",
-            time_in_force: "day",
-            client_order_id: `${slice.id}|${generateId("")}`,
-          });
-
-          return order.raw();
+          return slice ? createOrderWithRetry(alpaca, position, slice) : undefined;
         })
-      );
+      )).filter((order): order is NonNullable<typeof order> => order !== undefined);
 
       // Save to action log
       const details: LiquidationActionDetails = {
@@ -199,3 +191,40 @@ function deriveJobName(input: JobInput) {
   return `${input.userId}-${input.reason}-${hash}`;
 }
 
+async function createOrderWithRetry(alpaca: Alpaca, position: Position, slice: any) {
+  try {
+    const order = await alpaca.createOrder({
+      symbol: position.symbol,
+      qty: +position.qty,
+      side: "sell",
+      type: "market",
+      time_in_force: "day",
+      client_order_id: `${slice.id}|${generateId("")}`,
+    });
+
+    return order.raw();
+  } catch (error: any) {
+    if (error.message.includes('insufficient qty available for order')) {
+      // Parse the available quantity from the error message
+      const availableQty = parseFloat(error.message.match(/available: (\d+\.\d+)/)[1]);
+
+      console.error(`Insufficient quantity for ${position.symbol}. Requested: ${position.qty}, Available: ${availableQty}`);
+
+      // Retry the order with the available quantity
+      const order = await alpaca.createOrder({
+        symbol: position.symbol,
+        qty: availableQty,
+        side: "sell",
+        type: "market",
+        time_in_force: "day",
+        client_order_id: `${slice.id}|${generateId("")}`,
+      });
+
+      return order.raw();
+    } else if (error.message.includes('account is not allowed to short')) {
+      // Position no longer exists (likely deleted through the dashboard)
+    } else {
+      throw error; // Re-throw the error if it's not one we can handle
+    }
+  }
+}
