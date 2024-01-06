@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { toMusaffaStatus } from "./mappers"
 
 const OverallStatus = z.enum([
   "COMPLIANT",
@@ -9,17 +10,16 @@ const OverallStatus = z.enum([
 
 export type OverallStatus = z.infer<typeof OverallStatus>;
 
-export const BasicStockReportSchema = z.object({
+export const StockReportSchema = z.object({
+  // <BasicStockReport>
   symbol: z.string(), // "AAPL"
   name: z.string().optional(), // "Apple Inc"
   exchange: z.string().optional(), // "XNAS"
   status: OverallStatus,
   reportDate: z.string().optional(), // "2023-12-10:08:03.420Z"
-});
+  // </BasicStockReport>
 
-export type BasicStockReport = z.infer<typeof BasicStockReportSchema>;
-
-export const AdvancedStockReportSchema = BasicStockReportSchema.extend({
+  // <AdvancedStockReport>
   rawSymbol: z.string(), // "0R0K"
   figi: z.string().optional(), // "BBG00QDG6DB5"
   businessScreen: OverallStatus.optional(),
@@ -27,13 +27,33 @@ export const AdvancedStockReportSchema = BasicStockReportSchema.extend({
   compliantRevenue: z.number().optional(), // 98.34
   nonCompliantRevenue: z.number().optional(), // 1.66
   questionableRevenue: z.number().optional(), // 0
-});
+  // </AdvancedStockReport>
 
-export type AdvancedStockReport = z.infer<typeof AdvancedStockReportSchema>;
-
-export const AAOIFIStockReportSchema = AdvancedStockReportSchema.extend({
+  // <AAOIFIStockReport>
   debtToMarketCapRatio: z.number().optional(), // 0.0416
   securitiesToMarketCapRatio: z.number().optional(), // 0.1145
+  // </AAOIFIStockReport>
+}).transform<import("../musaffa/types").StockReport>((report) => {
+  console.log("report.debtToMarketCapRatio", report.debtToMarketCapRatio);
+  console.log("report.securitiesToMarketCapRatio", report.securitiesToMarketCapRatio);
+  return ({
+    symbol: report.symbol,
+    shariahComplianceStatus: toMusaffaStatus(report.status),
+    companyName: report.name,
+    lastUpdate: report.reportDate,
+    revenueBreakdown: {
+      halalRatio: report.compliantRevenue,
+      notHalalRatio: report.nonCompliantRevenue,
+      doubtfulRatio: report.questionableRevenue,
+    },
+    interestBearingSecuritiesAndAssets: {
+      ratio: report.securitiesToMarketCapRatio ? report.securitiesToMarketCapRatio * 100 : undefined,
+    },
+    interestBearingDebt: {
+      ratio: report.debtToMarketCapRatio ? report.debtToMarketCapRatio * 100 : undefined,
+    },
+    reportDate: report.reportDate,
+  })
 });
 
-export type AAOIFIStockReport = z.infer<typeof AAOIFIStockReportSchema>;
+export type StockReport = z.infer<typeof StockReportSchema>;

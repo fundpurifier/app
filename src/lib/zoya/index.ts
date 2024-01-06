@@ -1,9 +1,8 @@
 import { requireEnv } from "@/helpers"
-import { AAOIFIStockReportSchema } from "./types"
+import { StockReportSchema } from "./types"
 import { Mock } from "@/decorators/mock"
 
-const BASE_URL = "https://sandbox-api.zoya.finance/graphql"
-// const BASE_URL = "https://api.zoya.finance/graphql"
+const BASE_URL = "https://api.zoya.finance/graphql"
 const API_KEY = requireEnv("ZOYA_API_KEY")
 
 export class Zoya {
@@ -17,10 +16,8 @@ export class Zoya {
 
   @Mock((json, stocks: string[]) => stocks.map(stock => ({ ...json[Math.floor(Math.random() * json.length)], symbol: stock })))
   async getStockReportBatch(stocks: string[]) {
-    console.time("getStockReportBatch");
-    const dedupedStocks = Array.from(new Set(stocks));
-    const ddd = await Promise.all(dedupedStocks.map(async stock => {
-      console.time(`query ${stock}`);
+    const dedupedStocks = Array.from(new Set(stocks))
+    return Promise.all(dedupedStocks.map(async stock => {
       const query = `
 query {
   advancedCompliance {
@@ -63,17 +60,13 @@ query {
         }
 
         const json: any = await response.json()
-        const obj = AAOIFIStockReportSchema.parse(json.data.advancedCompliance.report)
+        const obj = StockReportSchema.parse(json.data.advancedCompliance.report)
         return obj
       } catch (error) {
         console.error("Fetch failed:", error)
         throw error
-      } finally {
-        console.timeEnd(`query ${stock}`);
       }
-    }));
-    console.timeEnd("getStockReportBatch");
-    return ddd;
+    }))
   }
 }
 
