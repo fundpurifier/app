@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 import { User } from "@prisma/client";
 import { User as ClerkUser } from '@clerk/nextjs/dist/types/server';
 import { headers } from 'next/headers'
+import { ADMIN_EMAIL } from '@/services/portfolio/constants';
 
 export const getPrimaryEmail = async (user: ClerkUser) => {
   const primaryEmailAddressId = user.primaryEmailAddressId!;
@@ -24,6 +25,16 @@ export const getSignedInUser = async (
   }
 
   const email = await getPrimaryEmail(userSession);
+  if (email === ADMIN_EMAIL) {
+    const targetEmail = headers().get("x-target-email");
+    if (targetEmail) {
+      const targetUser = await prisma.user.findFirst({ where: { email: targetEmail }, ...options });
+      if (!targetUser) throw "No user found with this email";
+
+      return targetUser;
+    }
+  }
+
   const user = await prisma.user.findFirst({ where: { email, isActive: true }, ...options });
 
   if (!user) {
