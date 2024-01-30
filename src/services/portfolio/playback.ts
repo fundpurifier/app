@@ -26,6 +26,8 @@ const EMPTY_POSITION: PortfolioPosition = {
   realizedPnl: Big(0),
 };
 
+const isDevEnvironment = process.env.NODE_ENV === 'development'
+
 export async function getPositionsBulk(
   portfolios: PortfolioWithSlices[],
   alpacaToken: string
@@ -34,7 +36,7 @@ export async function getPositionsBulk(
    * Retrieve positions across a group of portfolios, requesting the order history
    * only once for efficiency.
    */
-  const alpaca = new Alpaca(alpacaToken, false);
+  const alpaca = new Alpaca(alpacaToken, isDevEnvironment);
   const allOrders = await alpaca.getClosedOrders();
 
   const results: [Position[], number][] = [];
@@ -66,7 +68,7 @@ export async function getPositions(
   const sliceIds = slices.map((slice) => slice.id);
 
   // Get latest closed orders
-  const alpaca = new Alpaca(alpacaToken, false);
+  const alpaca = new Alpaca(alpacaToken, isDevEnvironment);
   const allOrders = await alpaca.getClosedOrders();
   const orders = allOrders.filter((order) => sliceIds.includes(order.sliceId));
 

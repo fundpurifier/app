@@ -48,6 +48,7 @@ Oh, and one more thing. It's **completely open-source** 💥
 git clone https://github.com/fundpurifier/app.git
 npm install
 npx prisma migrate dev # create the database
+npx prisma db seed # populate the database with initial data
 ```
 
 #### Register for 3rd Party Services
