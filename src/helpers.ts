@@ -85,7 +85,9 @@ export function* batchifyPeriod(
 export function requireEnv(name: string): string {
   const value = process.env[name];
   const isDevEnvironment = process.env.NODE_ENV === 'development'
-  if (!value && !isDevEnvironment) throw new Error(`Missing environment variable: ${name}`);
+
+  if (isDevEnvironment) return value ?? '';
+  if (!value) throw new Error(`Missing environment variable: ${name}`);
   return value;
 }
 
