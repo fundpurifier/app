@@ -59,7 +59,7 @@ export default new Worker<JobInput, void>(
       symbol: order.listedAsset.symbol,
       ...(order.orderType === "notional"
         ? {
-          notional: Math.abs(order.notional),
+          notional: +Math.abs(order.notional).toFixed(2), // Notional orders must be limited to 2 decimal places
           side: order.notional > 0 ? "buy" : "sell",
         }
         : {

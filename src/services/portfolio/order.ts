@@ -127,7 +127,7 @@ export async function previewOrders(
         return {
           ...p,
           orderType: 'notional',
-          notional: +orderAmounts[i],
+          notional: +orderAmounts[i].toFixed(2), // Notional orders must be limited to 2 decimal places
           sharePrice: price(p.listedAsset.symbol)
         }
       })
