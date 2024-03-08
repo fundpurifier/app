@@ -1,7 +1,7 @@
 "use server"
 import "server-only"
 
-import { getSignedInUser, portfolioGuard } from "@/helpers.server"
+import { getSignedInUser, isAdmin, portfolioGuard } from "@/helpers.server"
 import { FormType } from "./EditSettingsModal"
 import { prisma } from "@/initializers/prisma"
 import { getPortfolioValue } from "@/components/InvestFundModal/actions"
@@ -18,6 +18,7 @@ import {
 import { ActionOrder } from "@prisma/client"
 import { OPEN_ORDER_STATES } from "@/lib/brokers/alpaca/types"
 import { refreshSinglePortfolio } from "@/services/fund/refresh"
+import { ADMIN_EMAIL } from "@/services/portfolio/constants"
 
 export interface RecurringBuy {
   amount: number
@@ -148,7 +149,7 @@ export async function deleteFund(portfolioId: string) {
     include: { slices: true },
   })
   const value = await getPortfolioValue(portfolio!)
-  if (value > 0) return false
+  if (value > 0 && !isAdmin()) return false
 
   // Delete the portfolio
   await prisma.portfolio.update({

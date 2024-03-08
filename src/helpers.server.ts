@@ -16,6 +16,16 @@ export const getPrimaryEmail = async (user: ClerkUser) => {
   return email;
 }
 
+export const isAdmin = async () => {
+  const userSession = await currentUser();
+  if (!userSession) {
+    throw "No user session found";
+  }
+
+  const email = await getPrimaryEmail(userSession);
+  return email === ADMIN_EMAIL;
+}
+
 export const getSignedInUser = async (
   options?: Omit<Parameters<typeof prisma.user.findUnique>[0], "where">
 ) => {
