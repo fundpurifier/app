@@ -27,7 +27,7 @@ export const QuoteResponseSchema = z.array(
     exchange: z.string(),
     volume: z.number().nullable(),
     avgVolume: z.number().nullable(),
-    open: z.number(),
+    open: z.number().nullable(), // sometimes null, not sure why
     previousClose: z.number().nullable(),
     eps: z.number().nullable(),
     pe: z.number().nullable(),
