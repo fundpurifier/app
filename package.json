@@ -11,7 +11,8 @@
         "start": "npx prisma migrate deploy && next start",
         "lint": "next lint",
         "test": "jest",
-        "worker": "npx --yes bun --tsconfig-override ./tsconfig.worker.json src/workers/launch.ts"
+        "worker": "npx --yes bun --tsconfig-override ./tsconfig.worker.json src/workers/launch.ts",
+        "postinstall": "npx next telemetry disable"
     },
     "dependencies": {
         "@clerk/nextjs": "^4.23.3",
