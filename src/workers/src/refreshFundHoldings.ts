@@ -56,7 +56,11 @@ async function refreshAllFunds() {
 
     // Update each portfolio
     for (const portfolio of portfolios) {
-      refreshSinglePortfolio(portfolio, 'holdings-update', holdingsAtDate);
+      try {
+        refreshSinglePortfolio(portfolio, 'holdings-update', holdingsAtDate);
+      } catch (e: any) {
+        console.error(`Error refreshing portfolio ${portfolio.id}: ${e.message}`);
+      }
     }
   }
 }
