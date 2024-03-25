@@ -79,6 +79,7 @@ export class Finnhub {
     const json = await response.json()
     const holdings = FundHoldingsSchema.parse(json.holdings)
     const { atDate } = json // "2023-06-30"
+    if (!atDate || !holdings.length) throw new Error("No date/holdings found")
     return [holdings, atDate] as [typeof holdings, string]
   }
 

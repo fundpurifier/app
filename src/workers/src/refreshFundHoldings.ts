@@ -37,22 +37,31 @@ async function refreshAllFunds() {
   console.log(`Refreshing ${funds.length} funds`);
 
   for (const { type, isin } of funds) {
-    console.log(`Refreshing ${type} ${isin}`);
+    let portfolios: PortfolioWithSlicesFundAndUserWhitelistBlacklist[] = [];
+    let holdingsAtDate: string;
 
-    // Process each fund individually
-    const [_, holdingsAtDate] = await finnhub.getFundHoldings(
-      type == "etf" ? "etf" : "mutual-fund",
-      isin
-    );
+    try {
+      console.log(`Refreshing ${type} ${isin}`);
 
-    // Find users tracking this fund
-    const portfolios = await getOutdatedPortfoliosTrackingFund(
-      isin,
-      new Date(holdingsAtDate)
-    );
-    console.log(
-      `Found ${portfolios.length} portfolios updated prior to ${holdingsAtDate}`
-    );
+      // Process each fund individually
+      const [_, atDate] = await finnhub.getFundHoldings(
+        type == "etf" ? "etf" : "mutual-fund",
+        isin
+      );
+      holdingsAtDate = atDate
+
+      // Find users tracking this fund
+      portfolios = await getOutdatedPortfoliosTrackingFund(
+        isin,
+        new Date(holdingsAtDate)
+      );
+      console.log(
+        `Found ${portfolios.length} portfolios updated prior to ${holdingsAtDate}`
+      );
+    } catch (e: any) {
+      console.error(`Error refreshing ${type} ${isin}: ${e.message}`);
+      continue;
+    }
 
     // Update each portfolio
     for (const portfolio of portfolios) {
