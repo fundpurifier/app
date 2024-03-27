@@ -14,8 +14,13 @@ const worker = new Worker<void, void>(
   Queues.refreshFundHoldings,
   async (job) => {
     job.log('Starting to refresh all funds')
-    await refreshAllFunds()
-    job.log('Finished refreshing all funds')
+    try {
+      await refreshAllFunds()
+      job.log('Finished refreshing all funds')
+    } catch (error) {
+      job.log(`Error during refresh: ${error}`)
+      console.error(`Error during refresh: ${error}`)
+    }
   },
   {
     connection,
@@ -34,60 +39,69 @@ worker.on('progress', (job, progress) => {
 })
 
 worker.on('failed', (job, err) => {
+  // Enhanced error logging
   console.error(`Job ${job?.id} has failed with error: ${err.message}`)
+  console.error(`Error stack: ${err.stack}`)
+  if (err) {
+    console.error(`Error name: ${err.name}`)
+  }
 })
 
 async function refreshAllFunds() {
-  const funds = await prisma.fund.findMany({
-    where: {
-      Portfolio: {
-        some: {
-          trackChanges: true,
-          deleted: false,
+  try {
+    const funds = await prisma.fund.findMany({
+      where: {
+        Portfolio: {
+          some: {
+            trackChanges: true,
+            deleted: false,
+          },
         },
       },
-    },
-  })
+    })
 
-  console.log(`Refreshing ${funds.length} funds`)
+    console.log(`Refreshing ${funds.length} funds`)
 
-  for (const { type, isin } of funds) {
-    let portfolios: PortfolioWithSlicesFundAndUserWhitelistBlacklist[] = []
-    let holdingsAtDate: string
+    for (const { type, isin } of funds) {
+      let portfolios: PortfolioWithSlicesFundAndUserWhitelistBlacklist[] = []
+      let holdingsAtDate: string
 
-    try {
-      console.log(`Refreshing ${type} ${isin}`)
-
-      // Process each fund individually
-      const [_, atDate] = await finnhub.getFundHoldings(
-        type == "etf" ? "etf" : "mutual-fund",
-        isin
-      )
-      holdingsAtDate = atDate
-
-      // Find users tracking this fund
-      portfolios = await getOutdatedPortfoliosTrackingFund(
-        isin,
-        new Date(holdingsAtDate)
-      )
-      console.log(
-        `Found ${portfolios.length} portfolios updated prior to ${holdingsAtDate}`
-      )
-    } catch (e: any) {
-      console.error(`Error refreshing ${type} ${isin}: ${e.message}`)
-      continue
-    }
-
-    // Update each portfolio
-    for (const portfolio of portfolios) {
       try {
-        console.log(`Refreshing portfolio ${portfolio.id}`)
-        refreshSinglePortfolio(portfolio, 'holdings-update', holdingsAtDate)
-        console.log(`Successfully refreshed portfolio ${portfolio.id}`)
+        console.log(`Refreshing ${type} ${isin}`)
+
+        // Process each fund individually
+        const [_, atDate] = await finnhub.getFundHoldings(
+          type == "etf" ? "etf" : "mutual-fund",
+          isin
+        )
+        holdingsAtDate = atDate
+
+        // Find users tracking this fund
+        portfolios = await getOutdatedPortfoliosTrackingFund(
+          isin,
+          new Date(holdingsAtDate)
+        )
+        console.log(
+          `Found ${portfolios.length} portfolios updated prior to ${holdingsAtDate}`
+        )
       } catch (e: any) {
-        console.error(`Error refreshing portfolio ${portfolio.id}: ${e.message}`)
+        console.error(`Error refreshing ${type} ${isin}: ${e.message}`)
+        continue
+      }
+
+      // Update each portfolio
+      for (const portfolio of portfolios) {
+        try {
+          console.log(`Refreshing portfolio ${portfolio.id}`)
+          await refreshSinglePortfolio(portfolio, 'holdings-update', holdingsAtDate) // Ensure this call is awaited
+          console.log(`Successfully refreshed portfolio ${portfolio.id}`)
+        } catch (e: any) {
+          console.error(`Error refreshing portfolio ${portfolio.id}: ${e.message}`)
+        }
       }
     }
+  } catch (e: any) {
+    console.error(`refreshAllFunds encountered an error: ${e.message}`)
   }
 }
 
