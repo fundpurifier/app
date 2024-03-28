@@ -15,14 +15,14 @@ export const RepeatableQueues = {
   // Before open
   [Queues.refreshCorporateActions]: { pattern: "30 7 * * *" },
   [Queues.refreshListedAssets]: { pattern: "00 8 * * *" },
-  [Queues.syncAccountActivities]: { pattern: "30 8 * * 1-5" },
+  [Queues.syncAccountActivities]: { pattern: "30 8,19 * * 1-5" },
 
   // During the day
   [Queues.refreshFundHoldings]: { pattern: "0 12 * * 1-5" }, // after [refreshListedAssets]
 
   // After close
   [Queues.refreshHistoricalPricing]: { pattern: "15 17 * * 1-5" },
-  [Queues.syncAccountActivities]: { pattern: "45 19 * * 1-5" },
+  // [Queues.syncAccountActivities]: { pattern: "30 19 * * 1-5" },
 
   // Weekly
   [Queues.refreshFundList]: { pattern: "0 0 * * 0" },

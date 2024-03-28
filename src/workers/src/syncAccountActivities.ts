@@ -18,6 +18,8 @@ import { getActiveUsers } from "./helpers/db";
 import { User } from "@prisma/client";
 import { prisma } from "@/initializers/prisma";
 
+const TRANSFER_ACTIVITIES = ["TRANS", "ACATC", "CSD", "CSW"]
+
 const DIVIDEND_ACTIVITIES = [
   "DIV",
   "DIVCGL",
@@ -43,6 +45,8 @@ export default new Worker<void, void>(
     connection,
     autorun: false,
     metrics: { maxDataPoints: MetricsTime.TWO_WEEKS },
+    removeOnComplete: { age: 7 * 24 * 60 * 60 }, // 1 week
+    removeOnFail: { age: 31 * 24 * 60 * 60 }, // 1 month
   }
 );
 
@@ -68,7 +72,7 @@ export async function syncAccountActivities(user: User) {
 
   try {
     activities = await alpaca.getAccountActivites({
-      activity_types: ["TRANS", "ACATC", "CSD", "CSW"],
+      activity_types: TRANSFER_ACTIVITIES,
       after,
       direction: "asc",
     });
